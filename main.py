@@ -22,6 +22,8 @@ def main(args: list[str]):
     #TODO: Test copy()
     #copy(copy_jobs)
 
+    #TODO: Add post-commands (like systemctl restart haproxyS)
+
 def copy(copy_jobs: list[dict]):
     for job in copy_jobs:
         client = scp.Client(host=job["server"], user=job["user"])
